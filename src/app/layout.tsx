@@ -12,7 +12,7 @@ import ScrollReveal from "./components/ScrollReveal";
 import { siteConfig } from "@/lib/site-config";
 
 const dmSans = DM_Sans({
-  variable: "--font-heading --font-body",
+  variable: "--font-system",
   subsets: ["latin"],
   display: "swap",
 });

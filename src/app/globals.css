@@ -34,8 +34,8 @@
   --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
 
   /* Typography */
-  --font-heading: var(--font-fraunces), sans-serif;
-  --font-body: var(--font-outfit), sans-serif;
+  --font-heading: var(--font-system), sans-serif;
+  --font-body: var(--font-system), sans-serif;
 
   /* Animation */
   --hero-delay: 0ms;
