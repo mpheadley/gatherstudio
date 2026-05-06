@@ -1,6 +1,6 @@
-# Gather Hub — AI Studio Tools Hub
+# GatherStudio Hub — The Unified Platform for Organizers
 
-Unified marketing hub for the Gather suite of creative SaaS applications.
+Marketing hub for the Gather suite: 15+ specialized SaaS applications across wedding studios, market & vendor tools, and coaching/community verticals.
 
 ## Quick Start
 
@@ -14,41 +14,55 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Stack
 
 - **Framework:** Next.js 16 (App Router)
-- **Styling:** Tailwind CSS v4
-- **Deployment:** Vercel
-- **Domain:** gatherstudio.app
+- **Styling:** Tailwind CSS v4 + CSS custom properties
+- **Fonts:** Fraunces (headings), Outfit (body) via `next/font/google`
+- **Deployment:** Vercel with GitHub auto-deploy
+- **Domain:** gatherstudio.app (custom domain configured)
 
 ## What's Here
 
-- Homepage showcasing CopyCoach (AI captions) and FlyrStudio (AI design)
-- Minimal landing page tier (Kickstart)
-- Navigation to copystudio-smoky.vercel.app for the actual tools
-- SEO framework (robots.ts, sitemap.ts, JSON-LD schema)
-- Cookie banner for GA4 consent
+- **Homepage** — hero + all 15+ studio app cards organized by vertical
+- **Products page** — full directory of all Gather apps with tier pricing, features, CTAs
+- **Pricing page** — 3-tier founding member model (Essential/$19→$29, Professional/$49→$69, Bundle/$99→$149)
+- **About page** — founder story + 6 core values
+- **Contact page** — Formspree form
+- **Privacy page** — policy placeholder
+- **SEO framework** — robots.ts, sitemap.ts, LocalBusiness + Speakable JSON-LD schema, AEO markup
+- **GA4 consent** — cookie banner with consent gating
 
 ## Key Files
 
 | Path | Purpose |
 |------|---------|
-| `src/app/page.tsx` | Homepage with hero + product cards |
-| `src/app/globals.css` | Design system (colors, typography, animations) |
-| `src/lib/site-config.ts` | Centralized config (brand name, schema type, GA4 ID) |
-| `src/lib/metadata.ts` | SEO metadata helpers |
+| `src/app/page.tsx` | Homepage with 15+ product cards by vertical |
+| `src/app/products/page.tsx` | Product directory with tier/pricing/features per app |
+| `src/app/pricing/page.tsx` | Founding member pricing + FAQ |
+| `src/app/about/page.tsx` | Founder story + values grid |
+| `src/app/globals.css` | Design system (primary #E8722A, tokens, animations) |
+| `src/lib/site-config.ts` | Centralized brand config (name, domain, nav items, schema) |
+| `src/lib/site-config.ts` | All client data — single source of truth |
 
 ## Environment Variables
 
 - `NEXT_PUBLIC_GA4_ID` — Google Analytics 4 measurement ID (optional)
 
-## Live URL
+## Accounts Wired
 
-https://gatherstudio.app ✓ (deployed May 6, 2026)
+- Vercel: deployed, auto-deploy via GitHub
+- GitHub: mpheadley/gather (private monorepo)
+- Custom domain: gatherstudio.app → Vercel (configured May 6, 2026)
 
-Built on Next.js 16, deployed to Vercel with custom domain. Lighthouse: 90+ across all categories.
+## Live URLs
 
-## Design Brief
+- **Production:** https://gatherstudio.app ✓ (custom domain, May 6, 2026)
+- **Preview:** https://gatherstudio.vercel.app (auto-deployed from main)
+- **Lighthouse:** All categories 90+ (Accessibility 91, Best Practices 100, SEO 100, Agentic Browsing 100)
 
-Full design specifications in `DESIGN_BRIEF.md` (Phases 1-5 complete).
+## Architecture Notes
 
-- Primary color: green (#16a34a)
-- Typography: DM Sans (body and display)
-- Products: CopyCoach + FlyrStudio featured on hero
+- **No authentication** — public marketing hub (all routes accessible)
+- **No database** — static content, site-config driven
+- **No Clerk** — removed in commit 8430ae5, not needed for marketing-only direction
+- **CSS-first animations** — ScrollReveal, AnimateOnScroll components (no GSAP)
+- **Image optimization** — WebP format, responsive design (375px mobile target)
+- **Schema:** Organization + LocalBusiness + Speakable for AI engines + AEO FAQPage
