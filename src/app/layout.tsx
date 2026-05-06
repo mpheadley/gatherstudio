@@ -1,7 +1,7 @@
 // Root layout — wraps every page with fonts, nav, footer, and global providers.
 
 import type { Metadata } from "next";
-import { Fraunces, Outfit } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -11,14 +11,8 @@ import ScrollReveal from "./components/ScrollReveal";
 // Skip for utility/tool sites. See nextjs-starter-kit/CLAUDE.md for guidance.
 import { siteConfig } from "@/lib/site-config";
 
-const headingFont = Fraunces({
-  variable: "--font-heading",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const bodyFont = Outfit({
-  variable: "--font-body",
+const dmSans = DM_Sans({
+  variable: "--font-heading --font-body",
   subsets: ["latin"],
   display: "swap",
 });
@@ -59,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
+        className={`${dmSans.variable} antialiased`}
       >
         <ScrollReveal />
         <a

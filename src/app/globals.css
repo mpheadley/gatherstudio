@@ -7,22 +7,23 @@
 
 :root {
   /* Brand colors */
-  --primary: #E8722A;
-  --primary-hover: #d4651f;
-  --primary-tint: rgba(232, 114, 42, 0.08);
-  --primary-glow: rgba(232, 114, 42, 0.25);
+  --primary: #16a34a;
+  --primary-hover: #15803d;
+  --primary-tint: rgba(22, 163, 74, 0.08);
+  --primary-glow: rgba(22, 163, 74, 0.25);
   --primary-text: #FFFFFF;
 
   /* Neutrals */
-  --dark: #111111;
-  --dark-2: #1f1f1f;
-  --light: #FAFAFA;
-  --light-grey: #F3F3F3;
+  --dark: #111827;
+  --dark-2: #1f2937;
+  --light: #f3f4f6;
+  --light-grey: #e5e7eb;
   --white: #FFFFFF;
 
   /* Text */
-  --text-body: #555555;
-  --text-muted: #888888;
+  --text-body: #374151;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
 
   /* Buttons — use var(--dark) for light/mid accent colors */
   --btn-text: #FFFFFF;
