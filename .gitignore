@@ -44,3 +44,6 @@ og-preview.html
 design-preview.html
 font-preview.html
 widgets/
+
+# clerk configuration (can include secrets)
+/.clerk/
