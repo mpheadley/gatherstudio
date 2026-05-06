@@ -1,0 +1,15 @@
+// Auto-generated robots.txt from site-config.ts domain.
+
+import type { MetadataRoute } from "next";
+import { siteConfig } from "@/lib/site-config";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: "/preview",
+    },
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+  };
+}

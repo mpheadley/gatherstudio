@@ -1,0 +1,663 @@
+@import "tailwindcss";
+
+/* ── Design Tokens ─────────────────────────────────────────────────────────
+   Paste final values from Design Brief Phase 4.
+   These are placeholder values — replace with the client's actual palette.
+   ──────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Brand colors */
+  --primary: #E8722A;
+  --primary-hover: #d4651f;
+  --primary-tint: rgba(232, 114, 42, 0.08);
+  --primary-glow: rgba(232, 114, 42, 0.25);
+  --primary-text: #FFFFFF;
+
+  /* Neutrals */
+  --dark: #111111;
+  --dark-2: #1f1f1f;
+  --light: #FAFAFA;
+  --light-grey: #F3F3F3;
+  --white: #FFFFFF;
+
+  /* Text */
+  --text-body: #555555;
+  --text-muted: #888888;
+
+  /* Buttons — use var(--dark) for light/mid accent colors */
+  --btn-text: #FFFFFF;
+  --btn-radius: 6px;
+
+  /* Cards */
+  --card-radius: 12px;
+  --card-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+  /* Typography */
+  --font-heading: var(--font-fraunces), sans-serif;
+  --font-body: var(--font-outfit), sans-serif;
+
+  /* Animation */
+  --hero-delay: 0ms;
+  --stagger-delay: 0ms;
+}
+
+/* ── Tailwind Theme Extensions ─────────────────────────────────────────── */
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-dark: var(--dark);
+  --color-dark-2: var(--dark-2);
+  --color-light: var(--light);
+  --color-light-grey: var(--light-grey);
+}
+
+/* ── Base Styles ───────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip; /* clip (not hidden) — preserves position:sticky on child elements */
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background-color: var(--white);
+  line-height: 1.6;
+  overflow-x: clip;
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--heading-color, var(--dark));
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+/* ── Buttons ───────────────────────────────────────────────────────────── */
+/*
+ * Three named classes — always pick by context, never override manually:
+ *
+ *  btn-primary       Solid filled, main CTA. Works on ANY background.
+ *  btn-outline       Outline → fills on hover. LIGHT backgrounds only.
+ *  btn-outline-white White outline → fills white on hover. DARK backgrounds only.
+ *
+ * All buttons use the same background-position slide animation (no ::before).
+ * Gradient is 200% tall — top = default, bottom = hover state (slides up on hover).
+ * No z-index issues. Text is always readable. Never manually override colors.
+ */
+
+/* Shared base (layout + animation) */
+.btn-primary,
+.btn-outline,
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--btn-radius);
+  font-weight: 600;
+  font-family: var(--font-body);
+  text-decoration: none;
+  cursor: pointer;
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.25s ease, color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover,
+.btn-outline:hover,
+.btn-outline-white:hover {
+  background-position: bottom;
+  transform: translateY(-1px);
+}
+
+/* btn-primary — solid, slides to hover shade. Readable on any background. */
+.btn-primary {
+  background-image: linear-gradient(to top, var(--primary-hover) 50%, var(--primary) 50%);
+  color: var(--btn-text);
+  border: 2px solid var(--primary);
+}
+.btn-primary:hover { border-color: var(--primary-hover); }
+.btn-primary:disabled,
+.btn-primary[disabled] { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+/* btn-outline — transparent → fills primary. Light backgrounds only. */
+.btn-outline {
+  background-image: linear-gradient(to top, var(--primary) 50%, transparent 50%);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn-outline:hover { color: var(--btn-text); }
+
+/* btn-outline-white — transparent → fills white. Dark backgrounds only. */
+.btn-outline-white {
+  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.btn-outline-white:hover { color: var(--dark); }
+
+/* ── Section Layout ────────────────────────────────────────────────────── */
+
+.section {
+  padding: 5rem 1.5rem;
+}
+
+.section-dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+/* ── Dark-background heading fix ────────────────────────────────────────
+   Add any new dark-background class here. Headings inside flip to white
+   automatically via --heading-color. Never add per-heading overrides.
+   ──────────────────────────────────────────────────────────────────────── */
+.section-dark,
+.bg-navy,
+.bg-navy-dark,
+.bg-navy-light,
+footer {
+  --heading-color: var(--white);
+}
+
+.section-light {
+  background-color: var(--light);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Eyebrow Label ─────────────────────────────────────────────────────── */
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Cards ─────────────────────────────────────────────────────────────── */
+
+.card {
+  background: var(--white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+/* ── Animations ────────────────────────────────────────────────────────── */
+
+@keyframes animate-hero {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero {
+  animation: animate-hero 0.6s ease-out forwards;
+  animation-delay: var(--hero-delay);
+  opacity: 0;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: var(--stagger-delay);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Directional Scroll Animations ────────────────────────────────────────
+   Use these on elements that should slide in from a specific direction.
+   ScrollReveal in layout.tsx adds .visible automatically on scroll.
+   Use --stagger-delay on each element for sequential reveals.
+   ──────────────────────────────────────────────────────────────────────── */
+
+.animate-from-left {
+  opacity: 0;
+  transform: translateX(-7rem);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger-delay);
+}
+
+.animate-from-right {
+  opacity: 0;
+  transform: translateX(7rem);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger-delay);
+}
+
+.animate-from-bottom {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger-delay);
+}
+
+.animate-from-top {
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--stagger-delay);
+}
+
+.animate-from-left.visible,
+.animate-from-right.visible,
+.animate-from-bottom.visible,
+.animate-from-top.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* ── Marquee / scrolling banner ────────────────────────────────────────── */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── Ken Burns ─────────────────────────────────────────────────────────── */
+
+@keyframes ken-burns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+
+.ken-burns {
+  animation: ken-burns 12s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero,
+  .animate-on-scroll,
+  .animate-from-left,
+  .animate-from-right,
+  .animate-from-bottom,
+  .animate-from-top {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .marquee-track { animation: none; }
+  .ken-burns { animation: none; }
+  .faq-answer { transition: none; }
+  .form-shake { animation: none; }
+  .animate-slide-up { animation: none; }
+}
+
+/* ── Prose (long-form content) ─────────────────────────────────────────── */
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: var(--primary-hover);
+}
+
+/* ─── Photo Carousel ─── */
+
+.carousel-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius, 8px);
+  height: 420px;
+  user-select: none;
+  background: #1a1a1a;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 12px;
+  height: 100%;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  opacity: 0.3;
+  transition: opacity 0.35s ease;
+  position: relative;
+  background: #222;
+  cursor: pointer;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  cursor: default;
+}
+
+.carousel-slide-img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 20px 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 0%, transparent 100%);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.03em;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-slide.active .carousel-caption {
+  opacity: 1;
+}
+
+.carousel-counter {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.52);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.72rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  z-index: 3;
+}
+
+.carousel-btn:hover {
+  background: var(--primary, #007bff);
+  border-color: var(--primary, #007bff);
+}
+
+.carousel-prev { left: 16px; }
+.carousel-next { right: 16px; }
+
+.carousel-thumbs-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.carousel-thumbs {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  flex: 1;
+}
+
+.carousel-thumbs::-webkit-scrollbar { display: none; }
+
+.carousel-thumb {
+  flex: 0 0 auto;
+  width: 58px;
+  height: 44px;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.2s, outline-color 0.2s;
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.carousel-thumb.active {
+  opacity: 1;
+  outline-color: var(--primary, #007bff);
+}
+
+.carousel-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.carousel-thumb-btn {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.carousel-thumb-btn:hover {
+  background: var(--primary, #007bff);
+  color: #fff;
+  border-color: var(--primary, #007bff);
+}
+
+@media (max-width: 900px) {
+  .carousel-wrap { height: 320px; }
+}
+
+@media (max-width: 600px) {
+  .carousel-wrap { height: 240px; }
+  .carousel-btn { width: 36px; height: 36px; }
+}
+
+/* ── FAQ Accordion ─────────────────────────────────────────────────────── */
+/*
+ * Uses <details>/<summary> for native semantics + interpolate-size for
+ * smooth height: auto animation. Falls back to instant open/close in
+ * unsupported browsers.
+ *
+ * Usage:
+ *   <details className="faq-item">
+ *     <summary>Question text</summary>
+ *     <div className="faq-answer">Answer text</div>
+ *   </details>
+ */
+
+.faq-item {
+  interpolate-size: allow-keywords;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.faq-item summary {
+  padding: 1.25rem 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+  transition: color 0.2s ease;
+}
+
+.faq-item summary:hover {
+  color: var(--primary);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease, padding 0.35s ease;
+  padding: 0;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.faq-item[open] .faq-answer {
+  height: auto;
+  padding: 0 0 1.25rem;
+}
+
+/* ── Form Micro-Interactions ───────────────────────────────────────────── */
+/*
+ * Apply .form-input / .form-textarea to <input> and <textarea> elements.
+ * Focus glow and :user-invalid error state are automatic.
+ * Add .form-shake on submit failure, remove after animation completes.
+ */
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:user-invalid,
+.form-textarea:user-invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15);
+}
+
+@keyframes formShake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+
+.form-shake {
+  animation: formShake 0.4s ease;
+}
+
+/* ── Cookie Banner ─────────────────────────────────────────────────────── */
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* ── 2026 Browser Features ──────────────────────────────────────────────── */
+
+/* @starting-style — CSS entry animations without JS (Chrome 117+, Safari 17.5+, Firefox 129+) */
+@starting-style {
+  .card-enter { opacity: 0; transform: translateY(8px); }
+}
+.card-enter { transition: opacity 0.3s ease, transform 0.3s ease; }
+
+/* Popover API — native tooltips/modals, no JS for show/hide */
+[popover] {
+  background: white;
+  border: 1px solid var(--color-line, #e5e7eb);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  max-width: min(480px, 90vw);
+}
+[popover]::backdrop {
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+}
+
+/* Container Queries — components respond to parent width, not viewport */
+.container-query { container-type: inline-size; }
+@container (min-width: 400px) {
+  .cq-card-wide { display: grid; grid-template-columns: auto 1fr; gap: 1rem; }
+}

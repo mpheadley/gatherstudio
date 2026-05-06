@@ -1,0 +1,31 @@
+# GatherStudio Hub
+
+> The unified platform for event and community organizers across 15 verticals.
+
+## About
+
+GatherStudio Hub is a SaaS platform business based in Anniston, Alabama. The unified platform for event and community organizers across 15 verticals.
+
+## Services
+
+<!-- Replace with actual services and pricing from WEBSITE_COPY.md -->
+- Service One — Description of first service offering
+- Service Two — Description of second service offering
+- Service Three — Description of third service offering
+
+## Service Area
+
+Nationwide
+
+## Contact
+
+- Website: https://gatherstudio.app
+- Email: hello@gatherstudio.app
+- Phone: (256) 317-0000
+
+## Key Pages
+
+- https://gatherstudio.app/ — Homepage
+- https://gatherstudio.app/services — Services and pricing
+- https://gatherstudio.app/about — About Matt Headley
+- https://gatherstudio.app/contact — Contact and booking
