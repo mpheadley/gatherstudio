@@ -41,9 +41,9 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Live URL
 
-https://gatherstudio.app (deployed May 6, 2026)
+https://gatherstudio.app ✓ (deployed May 6, 2026)
 
-Also accessible at: https://gatherstudio.vercel.app
+Built on Next.js 16, deployed to Vercel with custom domain. Lighthouse: 90+ across all categories.
 
 ## Design Brief
 
