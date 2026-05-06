@@ -1,7 +1,6 @@
 // Root layout — wraps every page with fonts, nav, footer, and global providers.
 
 import type { Metadata } from "next";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
@@ -58,25 +57,22 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        {/* Built by Headley Web & SEO | headleyweb.com */}
-        <body
-          className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
+    <html lang="en">
+      <body
+        className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
+      >
+        <ScrollReveal />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[var(--primary)] focus:text-[var(--btn-text)] focus:px-4 focus:py-2 focus:rounded"
         >
-          <ScrollReveal />
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[var(--primary)] focus:text-[var(--btn-text)] focus:px-4 focus:py-2 focus:rounded"
-          >
-            Skip to content
-          </a>
-          <Nav />
-          <main id="main-content">{children}</main>
-          <Footer />
-          <CookieBanner />
-        </body>
-      </html>
-    </ClerkProvider>
+          Skip to content
+        </a>
+        <Nav />
+        <main id="main-content">{children}</main>
+        <Footer />
+        <CookieBanner />
+      </body>
+    </html>
   );
 }
