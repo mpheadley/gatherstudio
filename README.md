@@ -41,7 +41,9 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Live URL
 
-https://gatherstudio.app
+https://gatherstudio.vercel.app (deployed May 6, 2026)
+
+Domain setup: awaiting gatherstudio.app custom domain configuration in Vercel
 
 ## Design Brief
 
