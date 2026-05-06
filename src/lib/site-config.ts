@@ -43,6 +43,9 @@ export const siteConfig = {
     { label: "Pricing", href: "/pricing" },
     { label: "About", href: "/about" },
   ],
+
+  // Tier
+  tier: "professional" as const,
 } as const;
 
 export type SiteConfig = typeof siteConfig;
