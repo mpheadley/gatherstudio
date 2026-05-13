@@ -2,23 +2,22 @@
 
 > Fill this out AFTER running `STORYBRAND_PROMPT.md` and BEFORE starting `DESIGN_BRIEF.md`.
 > This is the single source of truth for all website copy. Every section on the site
-> should trace back to one of these 7 elements.
+> should trace back to one of these 8 movements.
 >
 > Keep it tight — one page, not five. If it doesn't fit in one sentence, it's not clear enough.
 
 ---
 
-## 1. Character (The Customer)
+## Movement 1 — Customer (Actor)
 
 **Who they are:**
 
 **What they want:**
 *(One clear desire — not a list. e.g. "A reliable plumber who shows up on time and fixes it right the first time.")*
 
-
 ---
 
-## 2. Problem
+## Movement 2 — Problem (Wound)
 
 **External problem** (the tangible thing that's broken):
 
@@ -30,10 +29,24 @@
 **Philosophical problem** (why it's just wrong):
 *(Format: "A [type of person] shouldn't have to [struggle]." e.g. "A homeowner shouldn't have to worry whether their plumber will actually show up.")*
 
+---
+
+## Movement 3 — Barrier (Mask)
+
+**What has the customer already tried?**
+*(What have they attempted before that didn't work? The failed fix they're embarrassed to admit.)*
+
+
+**What lie do they believe that's keeping them stuck?**
+*(The false belief holding them in place. e.g. "I just need to get better at talking about myself." or "I don't need a website — people find me through referrals.")*
 
 ---
 
-## 3. Guide (The Business)
+## Movement 4 — Solution (Scar)
+
+**What do you offer?**
+*(The specific thing you do — not vague, not a category. One sentence.)*
+
 
 **Empathy statement** (prove you understand their frustration):
 *(1-2 sentences. e.g. "We know how frustrating it is to take a day off work waiting for a contractor who never comes.")*
@@ -43,11 +56,11 @@
 -
 -
 -
-*(Certifications, years of experience, number of jobs completed, awards, Google rating)*
+*(Certifications, years of experience, jobs completed, awards, rating — or your own wound that makes you the right guide)*
 
 ---
 
-## 4. Plan (3 Simple Steps)
+## Movement 5 — Process (Light)
 
 | Step | Title | Description |
 |------|-------|-------------|
@@ -59,17 +72,7 @@
 
 ---
 
-## 5. Call to Action
-
-**Direct CTA:**
-*(The primary button text — what you want them to do. e.g. "Get Your Free Quote")*
-
-**Transitional CTA:**
-*(Lower commitment — for people not ready yet. e.g. "See Our Work", "Download Our Guide")*
-
----
-
-## 6. Failure (Stakes)
+## Movement 6 — Stakes (Path)
 
 **What happens if they DON'T act:**
 *(2-3 consequences. Be specific to the trade. e.g. "The leak gets worse, damages the subfloor, and a $200 fix becomes a $5,000 renovation.")*
@@ -78,11 +81,24 @@
 -
 -
 
-*(This maps to the "Pain Points" section and urgency language in CTAs.)*
+*(This maps to urgency language in CTAs and the "Pain Points" section.)*
 
 ---
 
-## 7. Success (The Transformation)
+## Movement 7 — Change (Shift)
+
+**What is the internal shift that happens?**
+*(Not the CTA button — the belief that changes. This is what transformation feels like from the inside.)*
+
+**Before belief:**
+
+**After belief:**
+
+*(This is the subtext behind your testimonials. A good testimonial names this shift out loud.)*
+
+---
+
+## Movement 8 — Success (Home)
 
 **What life looks like AFTER:**
 *(The emotional payoff — not just "fixed pipes" but what that means for their life.)*
@@ -99,9 +115,19 @@
 
 ---
 
+## Call to Action
+
+**Direct CTA:**
+*(The primary button text — what you want them to do. e.g. "Get Your Free Quote")*
+
+**Transitional CTA:**
+*(Lower commitment — for people not ready yet. e.g. "See Our Work", "Download Our Guide")*
+
+---
+
 ## One-Liner
 
-> **[Problem] + [Solution] + [Result]**
+> Derived from completing all 8 movements. Format: **[Who you help] + [What they struggle with] + [What you offer them]**
 >
 >
 
@@ -136,8 +162,6 @@ Write variations of the one-liner for different contexts. These ensure consisten
 
 ## Lead Generator (Transitional CTA Asset)
 
-The lead generator is the asset behind your transitional CTA. It captures emails from people who aren't ready to call yet but are interested enough to exchange their email for something useful.
-
 **Format:** *(checklist, PDF guide, quiz, video, calculator — pick one)*
 
 
@@ -160,35 +184,33 @@ The lead generator is the asset behind your transitional CTA. It captures emails
 
 ## Nurture Email Sequence (5 emails after lead generator download)
 
-These emails run automatically after someone downloads the lead generator. They move the prospect from "interested" to "ready to buy" using the Movements Doc.
-
-| # | Send Day | Subject Line | Movements Doc Element | Goal |
-|---|----------|-------------|---------------------|------|
-| 1 | Day 0 | Welcome + deliver the asset | **Guide** — empathy | Deliver value, establish trust |
-| 2 | Day 3 | Name the problem | **Problem** — external + internal | Agitate the pain they're feeling |
-| 3 | Day 7 | Show the plan | **Plan** — 3 steps | Show them how easy it is to work with you |
-| 4 | Day 14 | Social proof / success story | **Success** — transformation | Prove it works with a real example |
-| 5 | Day 21 | Direct CTA + stakes | **Call to Action** + **Failure** | Ask for the sale, show cost of inaction |
+| # | Send Day | Subject Line | Movement | Goal |
+|---|----------|-------------|----------|------|
+| 1 | Day 0 | Welcome + deliver the asset | **Movement 4 — Solution** (empathy) | Deliver value, establish trust |
+| 2 | Day 3 | Name the problem | **Movement 2 — Problem** (external + internal) | Agitate the pain they're feeling |
+| 3 | Day 7 | Show the process | **Movement 5 — Process** (3 steps) | Show them how easy it is to work with you |
+| 4 | Day 14 | Social proof / success story | **Movement 8 — Success** (transformation) | Prove it works with a real example |
+| 5 | Day 21 | Direct CTA + stakes | **CTA** + **Movement 6 — Stakes** | Ask for the sale, show cost of inaction |
 
 **Email 1 — Deliver + Empathize:**
 *(Subject: "Here's your [LEAD GENERATOR TITLE]")*
 *(Body: deliver the asset, say you understand their situation, hint at what's coming)*
 
 **Email 2 — Name the Problem:**
-*(Subject: pull from Problem — internal feeling)*
+*(Subject: pull from Movement 2 — internal feeling)*
 *(Body: describe the external problem, name the internal frustration, reference the philosophical injustice)*
 
-**Email 3 — Show the Plan:**
+**Email 3 — Show the Process:**
 *(Subject: "Here's how we make it easy")*
-*(Body: lay out the 3-step plan, remove complexity, make them feel like success is simple)*
+*(Body: lay out the 3-step process, remove complexity, make them feel like success is simple)*
 
 **Email 4 — Social Proof:**
 *(Subject: "[CLIENT NAME] was in the same spot you are")*
-*(Body: tell a Before → After story from a real client, include the metric or testimonial)*
+*(Body: tell a Before → After story from a real client — name the Change (Movement 7) they experienced)*
 
 **Email 5 — Direct CTA:**
-*(Subject: pull from Failure — what happens if they don't act)*
-*(Body: name the stakes, paint the success picture, make the direct CTA, include phone number)*
+*(Subject: pull from Movement 6 — Stakes — what happens if they don't act)*
+*(Body: name the stakes, paint the Success picture, make the direct CTA, include phone number)*
 
 ---
 
@@ -196,18 +218,19 @@ These emails run automatically after someone downloads the lead generator. They 
 
 Use this to check that every website section traces back to the Movements Doc:
 
-| Website Section | Movements Doc Element | Notes |
-|-----------------|---------------------|-------|
-| Hero headline | **Character** — what they want | |
-| Hero sub-headline | **Problem** — internal feeling | |
+| Website Section | Movement | Notes |
+|-----------------|----------|-------|
+| Hero headline | **Movement 1 — Customer** (what they want) | |
+| Hero sub-headline | **Movement 2 — Problem** (internal feeling) | |
 | Hero CTA | **Call to Action** — direct | |
-| Pain points / stakes | **Problem** + **Failure** | |
-| Services overview | **Plan** (expanded) | |
-| How It Works | **Plan** — 3 steps | |
-| Why Us / Trust | **Guide** — empathy + authority | |
-| Testimonials | **Success** — transformation proof | |
-| FAQ | **Problem** — objections addressed | |
-| Final CTA | **Call to Action** + **Success** | |
+| Villain / Problem section | **Movement 2 — Problem** + **Movement 3 — Barrier** | |
+| Services overview | **Movement 5 — Process** (expanded) | |
+| How It Works | **Movement 5 — Process** (3 steps) | |
+| Why Us / Trust | **Movement 4 — Solution** (empathy + authority) | |
+| Testimonials | **Movement 7 — Change** + **Movement 8 — Success** | Testimonials should name the shift |
+| FAQ | **Movement 2 — Problem** (objections addressed) | |
+| Final CTA urgency | **Movement 6 — Stakes** (cost of inaction) | |
+| Final CTA vision | **Movement 8 — Success** (life after) | |
 | Footer tagline | **One-Liner** (shortened) | |
 
 ---
@@ -215,12 +238,14 @@ Use this to check that every website section traces back to the Movements Doc:
 ## Checklist
 
 ### Core Movements Doc
-- [ ] All 7 elements filled in (no blanks)
-- [ ] Each element is one clear sentence (not a paragraph)
+- [ ] All 8 movements filled in (no blanks)
+- [ ] Each movement is one clear sentence (not a paragraph)
+- [ ] Barrier (Movement 3) names a real lie the customer believes — not a circumstance
+- [ ] Change (Movement 7) is a belief shift, not a button ("Book now") or a result ("more sales")
 - [ ] One-liner written and feels natural spoken aloud
 - [ ] Before/After transformation is emotionally specific (not generic)
-- [ ] Plan has exactly 3 steps (not 4, not 5 — keep it simple)
-- [ ] Failure stakes are specific to this trade (not "things get worse")
+- [ ] Process has exactly 3 steps (not 4, not 5 — keep it simple)
+- [ ] Stakes are specific to this trade (not "things get worse")
 
 ### Brand Soundbytes
 - [ ] Google Business Profile description written (750 char max)
@@ -235,10 +260,11 @@ Use this to check that every website section traces back to the Movements Doc:
 
 ### Nurture Emails
 - [ ] 5-email sequence outlined with subject lines
-- [ ] Each email maps to a Movements Doc element
+- [ ] Each email maps to a Movement
+- [ ] Email 4 names the Change (Movement 7) — not just the result
 
 ### Final
-- [ ] Section mapping table completed — every page section traced to a Movements Doc element
+- [ ] Section mapping table completed — every page section traced to a Movement
 - [ ] This document saved in the project folder as `movements.md`
 
 > **Next step:** Draft website copy using `WEBSITE_COPY.md`. Then open
