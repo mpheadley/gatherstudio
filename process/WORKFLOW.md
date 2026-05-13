@@ -56,23 +56,23 @@ Templates: `tools/client-meeting/discovery-cheatsheet.html` and `tools/client-me
 - Fill in the `[BRACKET]` variables with the client info from Step 0
 - Output the completed prompt so the user can paste it into Gemini (recommend Deep Research mode) or another AI — OR run the prompt directly in Claude if all business context is already available
 - Tell the user to save the output as `storybrand-research.md` in the project folder
-- Wait for the user to come back with the BrandScript results before proceeding (unless Claude ran it directly)
+- Wait for the user to come back with the Movements Doc results before proceeding (unless Claude ran it directly)
 - `STORYBRAND_REFERENCE.md` is the universal framework reference — do not re-research fundamentals
 
-**Step 1a-ii — Compose the BrandScript (all tiers):**
-- Open `~/Developer/webdev/starter-kit/BRANDSCRIPT.md` (the template)
-- Distill the research output into the 7-element BrandScript — each element should be ONE clear sentence
+**Step 1a-ii — Compose the Movements Doc (all tiers):**
+- Open `~/Developer/webdev/starter-kit/MOVEMENTS.md` (the template)
+- Distill the research output into the 7-element Movements Doc — each element should be ONE clear sentence
 - Fill in the Section Mapping table so every page section traces back to the script
 - **Starter/Professional:** Fill in Brand Soundbytes. Lead Generator and Nurture Emails are **optional** — include if the client has an email platform and wants lead capture; skip if it's out of scope for this engagement.
 - **Kickstart:** Fill the 7 elements + one-liner + brand descriptor. Skip soundbytes, lead gen, and nurture emails.
 - **Villain statement — ask before writing:** During or after the discovery meeting, ask: "What do your customers complain about when they come to you? What were they expecting that they didn't get somewhere else?" That answer is the villain statement. Do not write it until the client says it out loud. A villain invented by the copywriter is always weaker than one the client already uses in conversation.
-- **If client has existing copy:** Map their copy to the BrandScript elements instead of writing from scratch. Use the framework to organize and sequence what they've written — don't replace it. Note where their copy is missing a critical element (empathy, stakes, credibility) and offer an alternate there only.
-- Save as `brandscript.md` in the project folder — this is the messaging framework
+- **If client has existing copy:** Map their copy to the Movements Doc elements instead of writing from scratch. Use the framework to organize and sequence what they've written — don't replace it. Note where their copy is missing a critical element (empathy, stakes, credibility) and offer an alternate there only.
+- Save as `movements.md` in the project folder — this is the messaging framework
 
 **Step 1a-iii — Draft Website Copy + Visual Direction:**
 - Open `~/Developer/webdev/starter-kit/WEBSITE_COPY.md` (the template)
 - Write actual headlines, body copy, and CTAs for every website section
-- Pull from `brandscript.md` — each section maps to a BrandScript element
+- Pull from `movements.md` — each section maps to a Movements Doc element
 - **For each section, also fill in the Visual Direction block** — layout pattern, visual element (photo/icon/video), source (shot list #, icon library, stock), and mood. Requires Design Brief Phase 1b + Phase 2 to be done first.
 - Include answer-first content blocks for AEO (100-200 words per key page)
 - **Cognitive load checkpoints before finalizing copy:**

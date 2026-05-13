@@ -118,4 +118,4 @@ professional website built right now?
   summary with the client as part of your onboarding conversation.
 - **Feed findings into the StoryBrand copy.** If competitors all lead with price,
   you differentiate on reliability. If they all look corporate, you lean into
-  family-owned warmth. The research makes the BrandScript sharper.
+  family-owned warmth. The research makes the Movements Doc sharper.

@@ -14,7 +14,7 @@ while building instead of deciding them intentionally upfront.
 - [ ] Industry & marketing research completed — `INDUSTRY_RESEARCH_PROMPT.md` run through Gemini Deep Research (or Claude), output saved as `industry-research.md`
 - [ ] Competitor URLs from industry research pulled into Phase 1 visual references
 - [ ] Marketing issues and quick wins pulled into `marketing-notes.md`
-- [ ] Hero headline, service one-liners, and FAQ questions pulled from BrandScript into Design Brief Phase 3
+- [ ] Hero headline, service one-liners, and FAQ questions pulled from Movements Doc into Design Brief Phase 3
 - [ ] `DESIGN_BRIEF.md` exists in the project folder (copied by `create-site.sh`)
 - [ ] Phase 1 complete — at least 3 competitor/inspiration URLs recorded with borrow/avoid notes
 - [ ] Phase 2a complete — logo status confirmed (file / font-based / pending)
@@ -364,12 +364,12 @@ This is a 15-minute checklist they complete to accelerate Google discovery.
 Set up after the site is live and domain is confirmed. Uses one Mailchimp account (yours)
 across all clients — each client gets their own Audience.
 
-- [ ] **Lead magnet identified** — from `brandscript.md` Lead Generator section (checklist, guide, quiz, etc.)
+- [ ] **Lead magnet identified** — from `movements.md` Lead Generator section (checklist, guide, quiz, etc.)
 - [ ] **Lead magnet created** — PDF, downloadable resource, or gated content
 - [ ] **Lead magnet linked on site** — hero CTA, footer, or dedicated landing section
 - [ ] **Mailchimp Audience created** for this client (named: `[Client Name] — [Domain]`)
 - [ ] **Email capture form** embedded on site — gates the lead magnet download
-- [ ] **3-email nurture automation built** in Mailchimp (from `brandscript.md` Nurture Sequence):
+- [ ] **3-email nurture automation built** in Mailchimp (from `movements.md` Nurture Sequence):
   - Email 1 (Day 0): Deliver the resource + establish authority
   - Email 2 (Day 3): Address the problem + build trust
   - Email 3 (Day 7): Direct CTA (call/book/quote)

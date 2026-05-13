@@ -1,4 +1,4 @@
-# BrandScript — {{CLIENT_NAME}}
+# Movements Doc — {{CLIENT_NAME}}
 
 > Fill this out AFTER running `STORYBRAND_PROMPT.md` and BEFORE starting `DESIGN_BRIEF.md`.
 > This is the single source of truth for all website copy. Every section on the site
@@ -160,9 +160,9 @@ The lead generator is the asset behind your transitional CTA. It captures emails
 
 ## Nurture Email Sequence (5 emails after lead generator download)
 
-These emails run automatically after someone downloads the lead generator. They move the prospect from "interested" to "ready to buy" using the BrandScript.
+These emails run automatically after someone downloads the lead generator. They move the prospect from "interested" to "ready to buy" using the Movements Doc.
 
-| # | Send Day | Subject Line | BrandScript Element | Goal |
+| # | Send Day | Subject Line | Movements Doc Element | Goal |
 |---|----------|-------------|---------------------|------|
 | 1 | Day 0 | Welcome + deliver the asset | **Guide** — empathy | Deliver value, establish trust |
 | 2 | Day 3 | Name the problem | **Problem** — external + internal | Agitate the pain they're feeling |
@@ -194,9 +194,9 @@ These emails run automatically after someone downloads the lead generator. They 
 
 ## Section Mapping Reference
 
-Use this to check that every website section traces back to the BrandScript:
+Use this to check that every website section traces back to the Movements Doc:
 
-| Website Section | BrandScript Element | Notes |
+| Website Section | Movements Doc Element | Notes |
 |-----------------|---------------------|-------|
 | Hero headline | **Character** — what they want | |
 | Hero sub-headline | **Problem** — internal feeling | |
@@ -214,7 +214,7 @@ Use this to check that every website section traces back to the BrandScript:
 
 ## Checklist
 
-### Core BrandScript
+### Core Movements Doc
 - [ ] All 7 elements filled in (no blanks)
 - [ ] Each element is one clear sentence (not a paragraph)
 - [ ] One-liner written and feels natural spoken aloud
@@ -235,12 +235,12 @@ Use this to check that every website section traces back to the BrandScript:
 
 ### Nurture Emails
 - [ ] 5-email sequence outlined with subject lines
-- [ ] Each email maps to a BrandScript element
+- [ ] Each email maps to a Movements Doc element
 
 ### Final
-- [ ] Section mapping table completed — every page section traced to a BrandScript element
-- [ ] This document saved in the project folder as `brandscript.md`
+- [ ] Section mapping table completed — every page section traced to a Movements Doc element
+- [ ] This document saved in the project folder as `movements.md`
 
 > **Next step:** Draft website copy using `WEBSITE_COPY.md`. Then open
 > `DESIGN_BRIEF.md` — Phase 3 pulls from the drafted copy, not from this
-> BrandScript directly.
+> Movements Doc directly.

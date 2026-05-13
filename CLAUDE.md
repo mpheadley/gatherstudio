@@ -6,7 +6,7 @@ In a new session, read these files in this order before writing any code:
 
 1. **`src/lib/site-config.ts`** — all client data. Never hardcode anything from here.
 2. **`src/app/globals.css`** — all design tokens and component classes.
-3. **`process/BRANDSCRIPT.md`** — client positioning: hero statement, villain, guide, CTA.
+3. **`process/MOVEMENTS.md`** — client positioning: hero statement, villain, guide, CTA.
 4. **`process/WEBSITE_COPY.md`** — all copy. Never invent copy.
 5. **This file** — conventions and do-not rules.
 

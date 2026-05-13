@@ -1,9 +1,9 @@
 # Website Copy & Visual Direction — {{CLIENT_NAME}}
 
-> Fill this out AFTER completing `brandscript.md` and the Design Brief through Phase 2
+> Fill this out AFTER completing `movements.md` and the Design Brief through Phase 2
 > (brand identity, photography direction, structural choices).
 >
-> This is where the BrandScript becomes actual website copy AND where you decide the
+> This is where the Movements Doc becomes actual website copy AND where you decide the
 > visual composition of each section. Words and visuals are designed together — the
 > photo you choose changes the copy you need, and vice versa.
 >
@@ -12,7 +12,7 @@
 > sections where text and visuals compete instead of complement.
 >
 > **For each section, fill in two things:**
-> 1. **Copy** — headlines, body text, CTAs (from BrandScript)
+> 1. **Copy** — headlines, body text, CTAs (from Movements Doc)
 > 2. **Visual direction** — layout pattern, what the visitor sees, image/icon/video
 >    needs, mood, and sourcing plan
 >
@@ -34,7 +34,7 @@
 
 ## Source Documents
 
-- [ ] `brandscript.md` completed (all 7 elements + soundbytes + lead generator)
+- [ ] `movements.md` completed (all 7 elements + soundbytes + lead generator)
 - [ ] `storybrand-research.md` available for reference
 
 ---
@@ -42,19 +42,19 @@
 ## Hero Section
 
 **Headline (H1):**
-*(Pull from BrandScript #1 Character — what the customer wants. Make it about THEM, not you.)*
+*(Pull from Movements Doc — Character — what the customer wants. Make it about THEM, not you.)*
 
 
 **Sub-headline:**
-*(Pull from BrandScript #2 Problem — name the internal feeling or the transformation.)*
+*(Pull from Movements Doc — Problem — name the internal feeling or the transformation.)*
 
 
 **Primary CTA button text:**
-*(Pull from BrandScript #5 Call to Action — direct.)*
+*(Pull from Movements Doc — Call to Action — direct.)*
 
 
 **Secondary CTA button text:**
-*(Pull from BrandScript #5 Call to Action — transitional.)*
+*(Pull from Movements Doc — Call to Action — transitional.)*
 
 
 **Visual direction:**
@@ -70,7 +70,7 @@
 One line. Names the villain. No body copy. No icon. Large centered type, light background.
 
 **The line:**
-*(Pull from BrandScript #2 Villain. Write it as a provocation, not a headline. Under 6 words. Do not write this until the client names their villain in conversation — ask first.)*
+*(Pull from Movements Doc — Villain. Write it as a provocation, not a headline. Under 6 words. Do not write this until the client names their villain in conversation — ask first.)*
 
 **Examples by villain type:**
 - Object: "Not a catalog." / "Not a template." / "Not the lowest bid."
@@ -105,15 +105,15 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 
 
 **Pain point 1:**
-*(Pull from BrandScript #2 Problem — external)*
+*(Pull from Movements Doc — Problem — external)*
 
 
 **Pain point 2:**
-*(Pull from BrandScript #2 Problem — internal)*
+*(Pull from Movements Doc — Problem — internal)*
 
 
 **Pain point 3:**
-*(Pull from BrandScript #6 Failure — what happens if they don't act)*
+*(Pull from Movements Doc — Failure — what happens if they don't act)*
 
 
 **Visual direction:**
@@ -153,7 +153,7 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 
 **Section headline:**
 
-*(Pull directly from BrandScript #4 Plan)*
+*(Pull directly from Movements Doc — Plan)*
 
 | Step | Title | Description (1-2 sentences) |
 |------|-------|----------------------------|
@@ -175,11 +175,11 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 
 
 **Empathy statement:**
-*(Pull from BrandScript #3 Guide — empathy. 1-2 sentences showing you understand their frustration.)*
+*(Pull from Movements Doc — Guide — empathy. 1-2 sentences showing you understand their frustration.)*
 
 
 **Authority proof points:**
-*(Pull from BrandScript #3 Guide — authority.)*
+*(Pull from Movements Doc — Guide — authority.)*
 -
 -
 -
@@ -195,7 +195,7 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 ## Testimonials
 
 **Ideal testimonial framing:**
-*(What would a perfect testimonial sound like? Write one that maps to BrandScript #7 Success — the Before → After transformation. Use this to coach clients when asking for testimonials.)*
+*(What would a perfect testimonial sound like? Write one that maps to Movements Doc — Success — the Before → After transformation. Use this to coach clients when asking for testimonials.)*
 
 > "Before working with [BUSINESS], I was [BEFORE STATE]. Now [AFTER STATE]."
 > — [Name], [Title/Business]
@@ -217,7 +217,7 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 
 **Section headline:**
 
-*(Each question should address an objection from BrandScript #2 Problem or a concern that blocks the CTA.)*
+*(Each question should address an objection from Movements Doc — Problem or a concern that blocks the CTA.)*
 
 **Q1:**
 **A1:**
@@ -242,11 +242,11 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 ## Contact / Final CTA Section
 
 **Headline:**
-*(Pull from BrandScript #7 Success — paint the picture of life after.)*
+*(Pull from Movements Doc — Success — paint the picture of life after.)*
 
 
 **Sub-headline:**
-*(Urgency from BrandScript #6 Failure — cost of inaction.)*
+*(Urgency from Movements Doc — Failure — cost of inaction.)*
 
 
 **CTA button text:**
@@ -301,7 +301,7 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 
 ## Footer Tagline
 
-*(Shortened version of the one-liner from brandscript.md)*
+*(Shortened version of the one-liner from movements.md)*
 
 
 ---
@@ -313,13 +313,13 @@ One line. Names the villain. No body copy. No icon. Large centered type, light b
 - [ ] Sub-headline names an emotion or transformation
 - [ ] Villain statement is ≤6 words and came from the client's own mouth — not invented
 - [ ] Pain points are specific to this trade (not generic "we're the best")
-- [ ] 3-step plan matches BrandScript exactly
+- [ ] 3-step plan matches Movements Doc exactly
 - [ ] FAQ is ≤4 questions on homepage — only questions that block the primary CTA
 - [ ] FAQ answers address real objections (not softball questions)
 - [ ] Final CTA section paints success AND names failure stakes
 - [ ] Answer-first content block is written (100-200 words, direct answer)
 - [ ] All copy reads at 8th grade level (no jargon)
-- [ ] Every section traces back to a BrandScript element
+- [ ] Every section traces back to a Movements Doc element
 - [ ] "What We Offer" eyebrow replaced with something specific to this client's positioning
 - [ ] Testimonials include at least one that matches the primary service being sold on this page
 - [ ] Section order is a deliberate choice — not just the default template order. Ask: does the portfolio need to come before the process for this audience? Does trust need to come before services?

@@ -27,7 +27,7 @@
 
 ## Pre-Phase: Research (StoryBrand + Industry)
 
-Before filling out this brief, run both research prompts. The BrandScript
+Before filling out this brief, run both research prompts. The Movements Doc
 feeds directly into Phase 3 copy. The industry research feeds into Phase 1
 competitor sites and `marketing-notes.md`.
 
@@ -37,16 +37,16 @@ competitor sites and `marketing-notes.md`.
 3. Review the research output — iterate if headlines feel generic
 4. Save the full output as `storybrand-research.md` in this project folder
 
-**Step 1a-ii — Compose the BrandScript:**
-1. Open `BRANDSCRIPT.md` and distill the research into the 7-element template
+**Step 1a-ii — Compose the Movements Doc:**
+1. Open `MOVEMENTS.md` and distill the research into the 7-element template
 2. Each element should be ONE clear sentence — not a paragraph
 3. Fill in the Section Mapping table so every page section traces back to the script
 4. Fill in Brand Soundbytes, Lead Generator concept, and Nurture Email outline
-5. Save as `brandscript.md` in the project folder
+5. Save as `movements.md` in the project folder
 
 **CRITICAL GATE — Identify the Story's Hero (before any visual direction):**
 
-Look at your completed BrandScript. **Who is the hero of this story?**
+Look at your completed Movements Doc. **Who is the hero of this story?**
 - Is it the customer (bride, homeowner, patient, business owner)?
 - Is it the product or service itself?
 - Is it the business founder?
@@ -68,7 +68,7 @@ Examples:
 
 **Step 1a-iii — Draft Website Copy + Visual Direction:**
 1. Open `WEBSITE_COPY.md` and write actual headlines, body copy, and CTAs for every section
-2. Pull from `brandscript.md` — each section maps to a BrandScript element
+2. Pull from `movements.md` — each section maps to a Movements Doc element
 3. **For each section, also fill in the Visual Direction block** — layout pattern, visual element, source, and mood. This requires Phase 1b (photography) and Phase 2 (brand identity) to be complete first.
 4. Include answer-first content blocks for AEO (100-200 words per key page)
 5. Save as `website-copy.md` in the project folder
@@ -85,7 +85,7 @@ Examples:
 > across all projects).
 
 - [ ] StoryBrand prompt completed and research output saved
-- [ ] BrandScript composed — all 7 elements + soundbytes + lead gen + nurture emails (`brandscript.md`)
+- [ ] Movements Doc composed — all 7 elements + soundbytes + lead gen + nurture emails (`movements.md`)
 - [ ] One-liner and brand descriptor saved for GBP / social bios / directories
 - [ ] Industry research completed and output saved
 - [ ] Competitor URLs pulled into Phase 1
@@ -761,9 +761,9 @@ Transfer your Phase 2 decisions here as ready-to-paste CSS. When you open
 
 Do not run `create-site.sh` or open any HTML file until every item is checked.
 
-### StoryBrand Research, BrandScript & Copy + Visual Direction
+### StoryBrand Research, Movements Doc & Copy + Visual Direction
 - [ ] StoryBrand prompt run and research output saved (`storybrand-research.md`)
-- [ ] BrandScript composed — all 7 elements + soundbytes + lead gen + nurture emails (`brandscript.md`)
+- [ ] Movements Doc composed — all 7 elements + soundbytes + lead gen + nurture emails (`movements.md`)
 - [ ] Website copy drafted — all section headlines, body copy, CTAs (`website-copy.md`)
 - [ ] Visual direction filled in for every section in `website-copy.md`
 - [ ] Answer-first content blocks written for homepage and services page

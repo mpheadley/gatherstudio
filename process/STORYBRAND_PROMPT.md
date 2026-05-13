@@ -1,7 +1,7 @@
 # StoryBrand Research Prompt
 
 > Replace the variables in [BRACKETS] with your client's information.
-> The AI will return a complete BrandScript + website copy direction.
+> The AI will return a complete Movements Doc + website copy direction.
 >
 > **Recommended workflow:**
 > 1. Run **Industry Research Prompt** first via Gemini Deep Research (Step 1b) —
@@ -11,13 +11,13 @@
 >    Claude cross-references the industry research results + StoryBrand framework
 >    + business context gathered in conversation. No Gemini needed for this step.
 >
-> **Why this order?** The industry research sharpens the BrandScript — competitor
+> **Why this order?** The industry research sharpens the Movements Doc — competitor
 > positioning, buyer behavior, and market gaps make the Problem/Guide/Success
 > elements more specific. StoryBrand is a messaging framework exercise, not a
 > research task.
 >
 > **Fallback:** If no industry research is available yet, Claude can still run
-> this prompt with just the business context from discovery. The BrandScript
+> this prompt with just the business context from discovery. The Movements Doc
 > will be less market-aware but still usable — refine after research returns.
 >
 > This prompt assumes the AI already understands StoryBrand fundamentals.
@@ -29,7 +29,7 @@
 
 ```
 You are a StoryBrand-certified messaging strategist. I'm building a website
-for a local service business and I need you to develop a complete BrandScript
+for a local service business and I need you to develop a complete Movements Doc
 and website copy direction using the StoryBrand 7-part framework.
 
 ## Business Information
@@ -47,7 +47,7 @@ and website copy direction using the StoryBrand 7-part framework.
 
 ## What I Need
 
-### Part 1: Complete BrandScript
+### Part 1: Complete Movements Doc
 
 Fill out each element of the StoryBrand framework for this specific business:
 
@@ -74,7 +74,7 @@ Fill out each element of the StoryBrand framework for this specific business:
 
 ### Part 2: Website Copy Direction
 
-Using the BrandScript above, provide specific copy recommendations for each
+Using the Movements Doc above, provide specific copy recommendations for each
 website section. Write actual headline and body copy — not descriptions of
 what to write.
 
@@ -117,10 +117,10 @@ social media bio, or Google Business Profile description.
 ## After Running the Prompt
 
 1. Save the full AI output as `storybrand-research.md` in the project folder
-2. **Compose the BrandScript:** Open `BRANDSCRIPT.md` and distill the research into the 7-element template. Each element = one clear sentence.
+2. **Compose the Movements Doc:** Open `MOVEMENTS.md` and distill the research into the 7-element template. Each element = one clear sentence.
 3. Fill in the Section Mapping table, Brand Soundbytes, Lead Generator concept, and Nurture Email outline
-4. Save the composed BrandScript as `brandscript.md` in the project folder
-5. **Draft Website Copy:** Open `WEBSITE_COPY.md` and write actual headlines, body copy, CTAs, and answer-first blocks for every section. Pull from `brandscript.md`.
+4. Save the composed Movements Doc as `movements.md` in the project folder
+5. **Draft Website Copy:** Open `WEBSITE_COPY.md` and write actual headlines, body copy, CTAs, and answer-first blocks for every section. Pull from `movements.md`.
 6. Save as `website-copy.md` in the project folder
 7. Now open `DESIGN_BRIEF.md` — Phase 3 pastes copy from `website-copy.md`
 
@@ -128,7 +128,7 @@ social media bio, or Google Business Profile description.
 
 ## Tips
 
-- **Run this BEFORE the Design Brief.** The BrandScript informs your copy
+- **Run this BEFORE the Design Brief.** The Movements Doc informs your copy
   decisions in Phase 3. Without it, you're guessing at headlines.
 - **You can iterate.** If the first output feels generic, reply with:
   "Make the internal problem more specific to [TRADE] customers in [CITY]"

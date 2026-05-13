@@ -123,10 +123,10 @@ StoryBrand recommends a specific information hierarchy for websites:
 
 ---
 
-## BrandScript Template (for reference)
+## Movements Doc Template (for reference)
 
 When filling out the per-project prompt, the AI will generate a
-BrandScript with these fields:
+Movements Doc with these fields:
 
 ```
 CHARACTER:     [What the customer wants]
@@ -144,9 +144,9 @@ SUCCESS:       [What life looks like after]
 
 ---
 
-## Mapping BrandScript to Website Sections
+## Mapping Movements Doc to Website Sections
 
-| BrandScript Element | Website Section | Design Brief Phase |
+| Movements Doc Element | Website Section | Design Brief Phase |
 |---------------------|----------------|-------------------|
 | Character desire | Hero headline | Phase 3 — Hero |
 | External problem | Hero sub-headline or problem section | Phase 3 — Hero |
