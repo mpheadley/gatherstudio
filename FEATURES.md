@@ -3,40 +3,13 @@
 ## Shipped Features
 
 ### Homepage (`/`)
-- Hero: "Gather: The unified platform for event and community organizers across 15 verticals"
-- All 15+ studio app cards organized by vertical (Wedding Studios, Market & Vendor Tools, Coaching & Community)
-- Per-card data: icon, name, tier, price range, description, 2 key features, external link
-- ScrollReveal animations on all sections
-- CTA buttons with hover states and smooth transitions
-
-### Products Page (`/products`)
-- Full app directory: 15+ apps organized into 4 verticals
-- Each vertical section: title, intro copy, card grid
-- Per-app card: app name, Tier (Essential/Professional/Suite), price range, description, 2 features, direct link
-- Verticals: Wedding Studios (7 apps), Market & Vendor Tools (3 apps), Coaching & Community (4 apps), Platform
-- Footer CTA: "Get started with Gather"
-
-### Pricing Page (`/pricing`)
-- 3-tier founding member pricing model
-- Tier 1: Essential ($19→$29/mo) — single studio access
-- Tier 2: Professional ($49→$69/mo, highlighted) — up to 5 studios
-- Tier 3: Suite Bundle ($99→$149/mo) — unlimited studios
-- Pricing rationale: founding members locked forever, price increases after 10 customers
-- FAQ section (5 items): defining founding member, tier switching, team members, single app, no contract requirement
-- Call-to-action: "Start Free Trial"
-
-### About Page (`/about`)
-- Founder story: "Built by operators, for operators"
-- Core values grid (6 items): Built by Operators, Fair/Transparent Pricing, You Own Your Data, 15+ Specialized Apps, No Setup Costs, Built to Last
-
-### Contact Page (`/contact`)
-- Formspree form with honeypot (_gotcha)
-- Fields: name, email, subject, message
-- GA4 tracking on submit
-- Success/error state handling
-
-### Privacy Page (`/privacy`)
-- Placeholder copy with section structure
+- Hero: "The Gather Suite — AI Studio Tools for Creatives"
+- Subheadline: "Captions, graphics, proposals, and more. All in one place."
+- Featured products section: 2 main apps (CopyCoach for captions, FlyrStudio for graphics)
+- Per-card: icon, title, description, CTA link
+- CTA buttons: primary "Explore CopyCoach", secondary "See All Products"
+- ScrollReveal animations on hero and product cards
+- SEO: LocalBusiness schema, Speakable markup for AI engines
 
 ### SEO & Schema
 - `robots.ts` — allows all, specifies canonical
@@ -69,11 +42,11 @@
 - `JsonLd` — renders JSON-LD `<script>` tags
 
 ### Styling
-- **Colors:** primary #E8722A (warm orange), dark #111111, light #FAFAFA, neutrals
-- **Typography:** Fraunces (headings, serif), Outfit (body, sans-serif)
-- **Design tokens:** CSS custom properties via `@theme` block in globals.css
-- **Spacing:** 8px base unit, Tailwind scale
-- **Animations:** fade-up on scroll, slide transitions, smooth color transitions
+- **Colors:** primary #16a34a (green), dark #111827, light #f3f4f6, neutrals gray scale
+- **Typography:** DM Sans (system font for headings and body)
+- **Design tokens:** CSS custom properties in globals.css
+- **Spacing:** Tailwind scale (8px base unit)
+- **Animations:** fade-up on scroll, slide transitions, button hover states
 - **Responsive:** mobile (375px), tablet, desktop
 
 ### Performance

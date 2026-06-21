@@ -2,13 +2,13 @@
 // Returns a different anchor text variant based on the current page path.
 
 const ANCHOR_TEXTS = [
-  "Headley Web & SEO",
+  "Headley",
   "Local Business Website Builder",
   "Small Business Web Design",
   "Websites for Local Businesses",
   "Professional Web Design",
   "Local SEO & Web Design",
-  "Headley Web Design",
+  "Headley",
   "Web Design & SEO in Alabama",
 ];
 

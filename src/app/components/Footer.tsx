@@ -10,7 +10,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-[var(--primary)] hover:underline"
           >
-            Headley Web
+            Headley
           </a>
           {" "}· headleyweb.com
         </div>

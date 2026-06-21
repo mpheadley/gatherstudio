@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   authors: [
     { name: siteConfig.ownerName },
-    { name: "Headley Web & SEO", url: "https://headleyweb.com" },
+    { name: "Headley", url: "https://headleyweb.com" },
   ],
   robots: { index: true, follow: true },
 };

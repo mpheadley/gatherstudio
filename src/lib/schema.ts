@@ -27,7 +27,7 @@ export function localBusinessSchema() {
     ),
     creator: {
       "@type": "Organization",
-      name: "Headley Web & SEO",
+      name: "Headley",
       url: "https://headleyweb.com",
     },
   };

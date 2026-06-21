@@ -17,6 +17,30 @@ export default function Home() {
       href: "https://copystudio-smoky.vercel.app/design",
       icon: "🎨",
     },
+    {
+      title: "PetalStudio",
+      description: "Florist pricing, proposals, and pre-order management. Recipe costing and client portal.",
+      href: "https://petalstudio.app",
+      icon: "🌸",
+    },
+    {
+      title: "Marketday",
+      description: "Farmers market organizer app. Real-time vendor status, public market page, announcements.",
+      href: "https://marketday.app",
+      icon: "🏪",
+    },
+    {
+      title: "The Aisle",
+      description: "Wedding vendor directory. Couples find vendors, vendors build profiles and get discovered.",
+      href: "https://theaisle.app",
+      icon: "💍",
+    },
+    {
+      title: "MarketVendor",
+      description: "Free vendor listing for farmers markets and pop-ups. QR code, follower tracking, booth search.",
+      href: "https://marketvendor.app",
+      icon: "🛍️",
+    },
   ];
 
   return (
@@ -97,7 +121,7 @@ export default function Home() {
           {siteConfig.brandDescriptor}
         </p>
         <p data-speakable="true">
-          Gather is a suite of AI-powered studio tools for creatives. CopyCoach generates on-brand social media captions. FlyrStudio creates custom flyers and graphics. Built by Headley Web.
+          Gather is a suite of AI-powered studio tools for creatives. CopyCoach generates on-brand social media captions. FlyrStudio creates custom flyers and graphics. Built by Headley.
         </p>
       </section>
     </>
