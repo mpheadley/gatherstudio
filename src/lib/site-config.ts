@@ -40,6 +40,7 @@ export const siteConfig = {
   // Navigation
   navItems: [
     { label: "Products", href: "/products" },
+    { label: "Blueprint", href: "/blueprint" },
     { label: "Pricing", href: "/pricing" },
     { label: "About", href: "/about" },
   ],
